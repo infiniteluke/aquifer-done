@@ -24,7 +24,7 @@ module.exports = function(Aquifer, AquiferDoneConfig) {
   _.defaults(AquiferDoneConfig, {
     postBuild: 'Aquifer is done building!',
     sound: false,
-    wait: true
+    wait: false
   });
   
   AquiferDone.postBuild = function () {
@@ -35,6 +35,7 @@ module.exports = function(Aquifer, AquiferDoneConfig) {
         message: AquiferDoneConfig.postBuild,
         icon: icon,
         sound: AquiferDoneConfig.sound,
+        wait: AquiferDoneConfig.wait
       }, function (err, response) {
         if (err) {
           reject(err);
