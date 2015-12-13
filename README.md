@@ -3,7 +3,17 @@ Know when your Aquifer build is done.
 
 ![Image of Aquifer Done Notification](https://cloud.githubusercontent.com/assets/1127238/11769579/a709af7c-a19f-11e5-865a-b02eb45c52ff.png)
 
-## Installation
+## NOTE
+Aquifer done is not released on NPM and the following installation instructions will only apply thereafter. In the meantime, installtion requires:
+
+```bash
+aquifer extension-add infiniteluke/aquifer-done
+```
+
+Then hack your aquifer.json file to edit the extension name from `infiniteluke/aquifer-done` to `aquifer-done`.
+
+
+## Installation (N/A ATM)
 To install this extension, in your Aquifer project, run:
 
 ```bash
